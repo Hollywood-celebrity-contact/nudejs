@@ -1,0 +1,15 @@
+
+[
+  {
+    "name": "Emma Watson",
+    "profession": "Actress",
+    "prize": "Signed Harry Potter wand",
+    "price": 1000
+  },
+  {
+    "name": "Zendaya",
+    "profession": "Actress",
+    "prize": "Red carpet pass",
+    "price": 1500
+  }
+]

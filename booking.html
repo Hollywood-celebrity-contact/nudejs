@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Celebrity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Experience</h1>
+  </header>
+  <main>
+    <form id="booking-form">
+      <label>Name: <input type="text" required></label><br>
+      <label>Email: <input type="email" required></label><br>
+      <label>WhatsApp: <input type="text" required></label><br>
+      <label>Country: <input type="text" required></label><br>
+      <label>Service: 
+        <select>
+          <option>Vacation</option>
+          <option>Meet & Greet</option>
+          <option>Lottery</option>
+          <option>Membership</option>
+          <option>Philanthropy</option>
+        </select>
+      </label><br>
+      <label>
+        <input type="checkbox" required>
+        I confirm the minimum price starts at EUR 750.
+      </label><br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script>
+    document.getElementById("booking-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const message = "Hello, I want to book a celebrity service from your website.";
+      window.location.href = "https://wa.me/447446430308?text=" + encodeURIComponent(message);
+    });
+  </script>
+</body>
+</html>
